@@ -11,3 +11,4 @@ applications:
       REGISTRATION_SERVER_ENDPOINT: https://registration-beta.cfapps.io
     services:
       - tracker-timesheets-database
+      - tracker-service-registry
