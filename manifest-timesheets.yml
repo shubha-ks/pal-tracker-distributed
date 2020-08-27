@@ -6,8 +6,11 @@ applications:
     disk_quota: 512M
     routes:
       - route: timesheets-beta.cfapps.io
-    path: Applications/TimesheetsServer/bin/Release/netcoreapp3.1/publish    
+    path: Applications/TimesheetsServer/bin/Release/netcoreapp3.1/publish
+    env:
+      GRANT_TYPE: client_credentials    
     services:
       - tracker-timesheets-database
       - tracker-service-registry
       - tracker-sso
+      - tracker-config-server
